@@ -19,3 +19,9 @@ for d in data:
 
 print('長度小於一百的資料總共有', len(new), '筆')
 
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('留言有提到 good 裡的資料總共有', len(good), '筆')
+print(good[0])
