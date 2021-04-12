@@ -10,4 +10,12 @@ print('總共有', len(data), '筆資料')
 sum_len = 0
 for d in data:
 	sum_len += len(d)
-print('平均有', sum_len / len(data))
+print('平均長度有', sum_len / len(data))
+
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+
+print('長度小於一百的資料總共有', len(new), '筆')
+
